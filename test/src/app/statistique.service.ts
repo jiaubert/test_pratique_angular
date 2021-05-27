@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class StatistiqueService {
+/*export class StatistiqueService {
 
   private readonly API_URL = "https://stats.naminilamy.fr/";
 
@@ -15,4 +15,4 @@ export class StatistiqueService {
   getStat(){
     return this.http.get(this.API_URL)
   }
-}
+}*/
