@@ -7,8 +7,7 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<app-statistique [statistique] = "stat1"></app-statistique>
-<app-statistique [statistique] = "stat2"></app-statistique>
+<app-statistique [statistique]="statistique" *ngFor="let statistique of tabStat"></app-statistique>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
