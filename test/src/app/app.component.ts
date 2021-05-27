@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Statistique } from './models/Statistiques';
 
 @Component({
   selector: 'app-root',
@@ -8,20 +9,18 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'test';
 
-  test1 = new Statistique{
-    id: Statistique.id = "a1f5f40-be3b-11eb-91ec-7f5875ecfb46",
-    titre = "Démographie en France",
-    valeur = "60M",
-    appreciation = "SUCCESS"
-  }
-  
-  
-  test2 = new Statistique{
-    id = "a1f5f40-be3b-11eb-91ec-7f5875ecfb48",
-    titre = "Parité homme/femme dans la formation DWWM St-Etienne",
-    valeur = "13/2",
-    appreciation = "DANGER"
-  }
+  public stat1 = new Statistique(
+    "fa1f5f40-be3b-11eb-91ec-7f5875ecfb46",
+    "Démographie en France",
+    "60M",
+    "SUCCESS"
+  );
+
+  public stat2 = new Statistique(
+    "fa1f5f40-be3b-11eb-91ec-7f5875ecfb47",
+    "Test",
+    "6M",
+    "ERROR"
+  );
+
 }
-
-
